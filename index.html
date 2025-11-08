@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Twenty One AI Automation Agency - Unleash Your Business's AI-Powered Potential with Custom AI Workflows, RPA, and Intelligent Document Processing">
+    <meta name="keywords" content="AI Automation, RPA, Intelligent Document Processing, Business Automation, Digital Transformation">
+    <meta name="author" content="Twenty One AI Automation Agency">
+    <title>Twenty One AI Automation Agency - AI-Powered Business Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-blue {
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+        }
+        
+        .gradient-blue-light {
+            background: linear-gradient(135deg, #e0f2fe 0%, #cffafe 100%);
+        }
+        
+        .button-primary {
+            @apply px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-blue-500 to-blue-600 hover:shadow-lg hover:scale-105 transition-all duration-300;
+        }
+        
+        .button-secondary {
+            @apply px-8 py-3 rounded-full font-semibold text-blue-600 bg-white border-2 border-blue-600 hover:bg-blue-50 hover:scale-105 transition-all duration-300;
+        }
+        
+        .card-hover {
+            @apply transition-all duration-300 hover:shadow-xl hover:scale-102;
+        }
+        
+        .feature-icon {
+            @apply w-12 h-12 text-blue-600;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-full gradient-blue flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">21</span>
+                </div>
+                <span class="text-2xl font-bold text-gray-900">Twenty One AI</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                <a href="mailto:contact@example.com" class="button-primary">Get Started</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden mobile-menu-button p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                <i class="fas fa-bars text-2xl text-gray-900"></i>
+            </button>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 md:hidden">
+                <div class="flex flex-col gap-4 p-6">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">About</a>
+                    <a href="mailto:contact@example.com" class="button-primary text-center">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-cyan-50 py-24 md:py-32 lg:py-40">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight">
+                        Unleash Your Business's <span class="gradient-text bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">AI-Powered Potential</span>
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl">
+                        Twenty One AI Automation Agency empowers businesses to thrive in the digital age. We craft intelligent automation solutions that streamline operations, boost efficiency, and drive unparalleled growth.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://www.example.com" class="button-primary text-center">
+                            <span class="flex items-center justify-center gap-2">
+                                Start Your Transformation
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="mailto:contact@example.com" class="button-secondary text-center">
+                            <span class="flex items-center justify-center gap-2">
+                                Contact Us
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex justify-center items-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute inset-0 gradient-blue rounded-3xl blur-2xl opacity-20"></div>
+                        <div class="relative bg-white rounded-3xl p-8 shadow-2xl">
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-full gradient-blue flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">AI-Powered Workflows</p>
+                                        <p class="text-sm text-gray-600">Custom solutions tailored to your needs</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-full gradient-blue flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Intelligent Automation</p>
+                                        <p class="text-sm text-gray-600">RPA and document processing excellence</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center gap-3">
+                                    <div class="w-12 h-12 rounded-full gradient-blue flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Proven Results</p>
+                                        <p class="text-sm text-gray-600">40% operational cost reduction</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Comprehensive AI Automation Solutions
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our cutting-edge features are designed to transform your business operations and unlock new levels of efficiency and innovation.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1: Custom AI Workflow Design -->
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border border-blue-100">
+                    <div class="mb-6">
+                        <div class="w-16 h-16 rounded-full gradient-blue flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5h.01"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Custom AI Workflow Design</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We design bespoke AI workflows that perfectly align with your unique business processes. Our expert team analyzes your operations, identifies automation opportunities, and creates intelligent systems that adapt and learn from your business patterns.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Tailored to your specific industry needs</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Seamless integration with existing systems</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Continuous optimization and improvement</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 2: Robotic Process Automation -->
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border border-blue-100">
+                    <div class="mb-6">
+                        <div class="w-16 h-16 rounded-full gradient-blue flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Robotic Process Automation (RPA)</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Automate repetitive, rule-based tasks with our advanced RPA solutions. From data entry to complex multi-step processes, our robots work 24/7 to handle high-volume operations with 99.9% accuracy, freeing your team to focus on strategic initiatives.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>24/7 automated operations</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Error reduction and quality improvement</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Scalable to handle growth</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 3: Intelligent Document Processing -->
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border border-blue-100">
+                    <div class="mb-6">
+                        <div class="w-16 h-16 rounded-full gradient-blue flex items-center justify-center">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Intelligent Document Processing (IDP)</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Transform unstructured documents into actionable data with our AI-powered IDP solutions. Our technology uses advanced machine learning to extract, classify, and process documents with human-level accuracy, eliminating manual data entry and accelerating workflows.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Automatic document classification</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Intelligent data extraction</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Compliance and audit trail</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 md:py-32 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Transform Your Business Operations
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Discover the measurable impact of AI automation on your bottom line and operational excellence.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Benefit 1: Cost Reduction -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border-l-4 border-blue-600">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-full gradient-blue flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-blue-600">40%</h3>
+                            <p class="text-gray-600 font-medium">Cost Reduction</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Reduce operational costs dramatically by automating labor-intensive processes. Our clients achieve an average 40% reduction in operational expenses within the first year, with ROI typically realized within 6-9 months. This translates to substantial savings that directly impact your bottom line and competitive positioning.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <p class="text-sm text-gray-600">
+                            <strong>Average savings:</strong> $500K - $2M annually for enterprise clients
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 2: Decision Making -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border-l-4 border-blue-600">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-full gradient-blue flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-blue-600">3x</h3>
+                            <p class="text-gray-600 font-medium">Faster Decisions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Accelerate decision-making with real-time, data-driven insights powered by advanced analytics. Our AI systems process vast amounts of data instantly, providing actionable intelligence that enables your leadership team to make faster, more informed strategic decisions. Real-time dashboards and predictive analytics give you a competitive edge.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <p class="text-sm text-gray-600">
+                            <strong>Insight delivery:</strong> From weeks to hours with predictive analytics
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 3: Strategic Focus -->
+                <div class="card-hover bg-white rounded-2xl p-8 shadow-lg border-l-4 border-blue-600">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-full gradient-blue flex items-center justify-center flex-shrink-0">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-blue-600">50%+</h3>
+                            <p class="text-gray-600 font-medium">Time Freed Up</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Reallocate human talent to high-value strategic initiatives. By automating routine tasks, your team can focus on innovation, customer relationships, and business growth. This reallocation of resources leads to increased employee satisfaction, reduced burnout, and improved retention while driving competitive advantages.
+                    </p>
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <p class="text-sm text-gray-600">
+                            <strong>Employee impact:</strong> 50%+ more time on strategic work
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Benefits -->
+            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8">Why Choose Twenty One AI?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full gradient-blue">
+                                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Industry Expertise</h4>
+                            <p class="text-gray-600">15+ years of combined experience in AI automation across finance, healthcare, manufacturing, and retail sectors.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full gradient-blue">
+                                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Proven Track Record</h4>
+                            <p class="text-gray-600">Successfully delivered 200+ automation projects with 98% client satisfaction and average 35% cost savings.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full gradient-blue">
+                                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Dedicated Support</h4>
+                            <p class="text-gray-600">24/7 technical support, continuous monitoring, and regular optimization to ensure maximum performance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-full gradient-blue">
+                                <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Scalable Solutions</h4>
+                            <p class="text-gray-600">Our solutions grow with your business, from startups to enterprise-level organizations with complex needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                    Trusted by Industry Leaders
+                </h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    See how companies across different industries have transformed their operations with our AI automation solutions.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100 shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "Twenty One AI transformed our invoice processing from a 3-day manual process to a fully automated workflow. We now process 10,000+ invoices monthly with 99.8% accuracy. The ROI was realized in just 4 months. Their team's expertise and support have been exceptional throughout the entire journey."
+                    </p>
+                    <div class="flex items-center gap-3 pt-6 border-t border-blue-200">
+                        <div class="w-12 h-12 rounded-full gradient-blue flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">MK</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Michael Kennedy</p>
+                            <p class="text-sm text-gray-600">Finance Director, Global Financial Corp</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100 shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "The custom AI workflow designed by Twenty One AI has been a game-changer for our customer service operations. We've reduced response times by 65% and improved customer satisfaction scores significantly. Their team understood our business requirements perfectly and delivered a solution that exceeded our expectations."
+                    </p>
+                    <div class="flex items-center gap-3 pt-6 border-t border-blue-200">
+                        <div class="w-12 h-12 rounded-full gradient-blue flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">SR</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Sarah Rodriguez</p>
+                            <p class="text-sm text-gray-600">VP of Operations, TechServe Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100 shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "Implementing RPA through Twenty One AI has been transformative for our manufacturing operations. We've eliminated 85% of manual data entry tasks, reduced errors from 2.3% to 0.1%, and our team can now focus on continuous improvement initiatives. The implementation was smooth and the ongoing support is outstanding."
+                    </p>
+                    <div class="flex items-center gap-3 pt-6 border-t border-blue-200">
+                        <div class="w-12 h-12 rounded-full gradient-blue flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">DJ</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">David Johnson</p>
+                            <p class="text-sm text-gray-600">Operations Manager, Advanced Manufacturing Inc</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100 shadow-md">
+                    <div class="flex items-center gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" stroke-width="1.5">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "Our healthcare organization needed to process thousands of patient documents daily. Twenty One AI's IDP solution has been incredible - we now handle 95% of document processing automatically. Compliance tracking is seamless, and our staff can dedicate more time to patient care. Highly recommended!"
+                    </p>
+                    <div class="flex items-center gap-3 pt-6 border-t border-blue-200">
+                        <div class="w-12 h-12 rounded-full gradient-blue flex items-center justify-center flex-shrink-0">
+                            <span class="text-white font-bold">EC</span>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900">Emily Chen</p>
+                            <p class="text-sm text-gray-600">IT Director, Regional Healthcare Network</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 md:py-32 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="hidden lg:block">
+                    <div class="relative">
+                        <div class="absolute inset-0 gradient-blue rounded-3xl blur-2xl opacity-20"></div>
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Team collaboration" class="relative rounded-3xl shadow-2xl w-full h-auto">
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                        About Twenty One AI
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Founded in 2009, Twenty One AI Automation Agency was born from a simple vision: to democratize artificial intelligence and automation technology for businesses of all sizes. Our founding team of data scientists, software engineers, and business strategists recognized that most organizations struggled to unlock the transformative potential of AI due to complexity, cost, and lack of expertise. We set out to change that by creating accessible, practical, and powerful automation solutions that deliver measurable results. Over the past 15 years, we've grown from a small startup to a trusted partner for 500+ organizations globally, helping them reimagine their operations through intelligent automation.
+                        </p>
+                        
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            Our mission is to empower businesses to achieve digital transformation through innovative AI automation solutions that are both intelligent and human-centered. We believe that technology should enhance human capabilities, not replace them. Our core values—Innovation, Integrity, Impact, and Inclusion—guide every project we undertake. We're committed to staying at the forefront of AI and automation technology, continuously learning and adapting to serve our clients better. We invest heavily in research and development, maintain certifications with leading technology providers, and foster a culture of continuous improvement. At Twenty One AI, success isn't just measured in metrics—it's measured in the positive impact we create for our clients, their employees, and the broader business community.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-6 pt-8">
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-blue-600">500+</p>
+                            <p class="text-sm text-gray-600 mt-2">Clients Served</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-blue-600">200+</p>
+                            <p class="text-sm text-gray-600 mt-2">Projects Completed</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-blue-600">98%</p>
+                            <p class="text-sm text-gray-600 mt-2">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop" alt="Business transformation" class="w-full h-full object-cover">
+            <div class="absolute inset-0 gradient-blue opacity-70"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                Ready to Transform Your Business?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Join hundreds of leading companies that have already discovered the transformative power of AI automation. Let's discuss how we can help you achieve your business goals.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://www.example.com" class="px-8 py-4 rounded-full font-semibold text-blue-600 bg-white hover:shadow-lg hover:scale-105 transition-all duration-300 inline-flex items-center justify-center gap-2">
+                    Start Your Journey
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <a href="mailto:contact@example.com" class="px-8 py-4 rounded-full font-semibold text-white border-2 border-white hover:bg-white hover:text-blue-600 hover:scale-105 transition-all duration-300 inline-flex items-center justify-center gap-2">
+                    Schedule a Demo
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 rounded-full gradient-blue flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">21</span>
+                        </div>
+                        <span class="text-xl font-bold text-white">Twenty One AI</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Empowering businesses with intelligent automation solutions that drive growth and efficiency.
+                    </p>
+                    <div class="flex gap-4 pt-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:gradient-blue flex items-center justify-center transition-all duration-300">
+                            <i class="fab fa-facebook-f text-gray-400 hover:text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:gradient-blue flex items-center justify-center transition-all duration-300">
+                            <i class="fab fa-twitter text-gray-400 hover:text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:gradient-blue flex items-center justify-center transition-all duration-300">
+                            <i class="fab fa-linkedin-in text-gray-400 hover:text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 hover:gradient-blue flex items-center justify-center transition-all duration-300">
+                            <i class="fab fa-instagram text-gray-400 hover:text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Solutions -->
+                <div>
+                    <h3 class="text-white font-semibold text-lg mb-6">Solutions</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">AI Workflows</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">RPA Services</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Document Processing</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Business Benefits</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Company -->
+                <div>
+                    <h3 class="text-white font-semibold text-lg mb-6">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Blog</a></li>
+                        <li><a href="mailto:contact@example.com" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal -->
+                <div>
+                    <h3 class="text-white font-semibold text-lg mb-6">Legal</h3>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Cookie Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2025 Twenty One AI Automation Agency. All rights reserved.
+                    </p>
+                    <p class="text-gray-400 text-sm">
+                        <strong>Contact:</strong> <a href="mailto:contact@example.com" class="text-blue-400 hover:text-blue-300 transition-colors duration-300">contact@example.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle (if FAQ section exists)
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
